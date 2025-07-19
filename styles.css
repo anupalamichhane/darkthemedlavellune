@@ -447,6 +447,15 @@ footer {
   cursor: pointer;
 }
 
+#taskList span {
+  color: #222;
+}
+
+#taskInput {
+  color: #222;
+  background: #fff;
+}
+
 .affirmation {
   text-align: center;
   margin-top: 3rem;
