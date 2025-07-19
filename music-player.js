@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     calm: { name: "Gentle Calm", src: "assets/calm.mp3" },
     relax: { name: "Soft Relax", src: "assets/relax.mp3" },
     motivate: { name: "Motivation Boost", src: "assets/motivate.mp3" },
-    energize: { name: "Energize Vibes", src: "assets/energize.mp3" },
+    energize: { name: "Energize Vibes", src: "assets/energized.mp3" },
     reflect: { name: "Reflective Mood", src: "assets/reflect.mp3" },
     focus: { name: "Deep Focus", src: "assets/focus.mp3" }
   };
