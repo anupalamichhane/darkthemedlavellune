@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lavellune — Calm</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome for music player icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Add this with your other CSS links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body data-mood="calm" class="mood-page calm">
+  <!-- Background stars animation -->
+  <div class="star-field" aria-hidden="true"></div>
+
+  <!-- Main header with navigation -->
+  <header>
+    <h1 class="logo">Lavellune</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="studyroom.html">Study Room</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Mood title section -->
+    <h2 class="mood-title">Calm 🌿</h2>
+
+    <!-- Timer section with controls -->
+    <section class="timer-section">
+      <div id="timer">25:00</div>
+      <div class="timer-buttons">
+        <button data-action="start">Start</button>
+        <button data-action="pause">Pause</button>
+        <button data-action="reset">Reset</button>
+      </div>
+    </section>
+
+    <!-- Affirmation section that rotates messages -->
+    <section class="affirmation">
+      <h3>Affirmation</h3>
+      <p id="affirmationText">You are safe. You are whole. You are enough.</p>
+    </section>
+
+    <!-- Todo list section with form and task list -->
+    <section class="todo-section">
+      <h3>Your Tasks</h3>
+      <form id="taskForm" class="todo-container" autocomplete="off">
+        <input id="taskInput" placeholder="What do you need to do?" />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <!-- Footer with copyright -->
+  <footer>&copy; 2025 Lavellune</footer>
+  
+  <div class="lavellune-music-player">
+  <button id="toggleAudio" aria-label="Play / Pause">
+    <i class="fa-solid fa-play"></i>
+    <span class="pulse-dot"></span>
+  </button>
+  <div class="track-info">
+    <span class="track-label">Now playing</span>
+    <span id="trackName" class="track-name">...</span>
+  </div>
+  <audio id="moodAudio" loop></audio>
+</div>
+
+  <!-- External JavaScript files -->
+  <script src="script.js"></script>
+  <script src="background-effects.js"></script>
+  <script src="music-player.js"></script>
+  <!-- Add this with your other script tags -->
+<script src="animations.js"></script>
+</body>
+</html>
